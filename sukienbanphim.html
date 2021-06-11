@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Su Kien Ban Phim</title>
+</head>
+<body onkeydown="move(event)">
+<img id = "image" src="quabong.jpg" width="400px" height="400px" style="position: relative;left: 0px;top: 0px">
+<script>
+    function down() {
+        let element = document.getElementById("image");
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+    function up() {
+        let element = document.getElementById("image");
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+    function left() {
+        let element = document.getElementById("image");
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+    }
+    function right() {
+        let element = document.getElementById("image");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
+    }
+    function move(abc) {
+        switch (abc.keyCode) {
+            case 37:
+                left();
+                break;
+            case 39:
+                right();
+                break;
+            case 38:
+                up();
+                break;
+            case 40:
+                down();
+                break;
+        }
+    }
+</script>
+</body>
+</html>
