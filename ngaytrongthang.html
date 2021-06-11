@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bao so ngay trong thang</title>
+</head>
+<body>
+<input id = "sothang" type="text" width="50px">
+<button type="button" onclick="demsongay()">Thong bao so ngay trong trong thang</button>
+<script>
+    function demsongay(){
+    let thang = +document.getElementById("sothang").value;
+    switch (thang) {
+        case 1:
+        case 3:
+        case 4:
+        case 11:
+        case 12:
+            alert("thang co 31 ngay");
+            break;
+        case 2:
+            alert("thang co 28 hoac 29 ngay");
+            break;
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+            alert ("thang co 30 ngay");
+            break;
+        default:
+            alert(" may treu tao a");
+    }}
+</script>
+</body>
+</html>
