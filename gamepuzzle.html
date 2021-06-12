@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>Game puzzle</title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="jquery assignment 3 puzzle">
+     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+     <meta name="author" content="Adam Shechter">
+</head>
+<body>
+   <div onclick = "doianha1()" style="background-color: black;width: 440px;height: 230px"><img id = "a1"  src="phan1.jpg"></div><br>
+   <div onclick = "doianha2()" style="background-color: black;width: 440px;height: 230px"><img id = "a2"  src="phan2.jpg"></div><br>
+   <div onclick = "doianha3()" style="background-color: black;width: 440px;height: 230px"><img id = "a3"  src="phan3.jpg"></div>
+<script>
+  function doianha1(){
+    let randomso = Math.round(Math.random()*2) +1;
+    switch (randomso){
+      case 1: document.getElementById("a1").src = "phan2.jpg";
+        break;
+      case 2: document.getElementById("a1").src = "phan3.jpg";
+        break;
+      case 3: document.getElementById("a1").src = "phan1.jpg";
+        break;
+    }
+      let anha1 = document.getElementById("a1").src;
+      let anha2 = document.getElementById("a2").src;
+      let anha3 = document.getElementById("a3").src;
+      if ((anha1==="http://localhost:63342/btthbai9/phan1.jpg")&&
+          (anha2==="http://localhost:63342/btthbai9/phan2.jpg")&&
+          (anha3==="http://localhost:63342/btthbai9/phan3.jpg")){
+          alert("Xin chuc mung ban!")
+      }
+    }
+  function doianha2(){
+      let randomso = Math.round(Math.random()*2) +1;
+      switch (randomso){
+          case 1: document.getElementById("a2").src = "phan2.jpg";
+              break;
+          case 2: document.getElementById("a2").src = "phan3.jpg";
+              break;
+          case 3: document.getElementById("a2").src = "phan1.jpg";
+              break;
+      }
+      let anha1 = document.getElementById("a1").src;
+      let anha2 = document.getElementById("a2").src;
+      let anha3 = document.getElementById("a3").src;
+      if ((anha1==="http://localhost:63342/btthbai9/phan1.jpg")&&
+          (anha2==="http://localhost:63342/btthbai9/phan2.jpg")&&
+          (anha3==="http://localhost:63342/btthbai9/phan3.jpg")){
+          alert("Xin chuc mung ban!")
+      }
+  }
+  function doianha3(){
+      let randomso = Math.round(Math.random()*2) +1;
+      switch (randomso){
+          case 1: document.getElementById("a3").src = "phan2.jpg";
+              break;
+          case 2: document.getElementById("a3").src = "phan3.jpg";
+              break;
+          case 3: document.getElementById("a3").src = "phan1.jpg";
+              break;
+      }
+      let anha1 = document.getElementById("a1").src;
+      let anha2 = document.getElementById("a2").src;
+      let anha3 = document.getElementById("a3").src;
+      if ((anha1==="http://localhost:63342/btthbai9/phan1.jpg")&&
+          (anha2==="http://localhost:63342/btthbai9/phan2.jpg")&&
+          (anha3==="http://localhost:63342/btthbai9/phan3.jpg")){
+          alert("Xin chuc mung ban!")
+      }
+  }
+</script>
+</body>
+</html>
