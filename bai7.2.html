@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai phuong trinh bac 2</title>
+</head>
+<body>
+<script>
+  let a = +prompt ('nhap tham so a cua phuong trinh a*X2 + bx + c=0');
+  let b = +prompt ('nhap tham so b cua phuong trinh a*X2 + bx + c=0');
+  let c = +prompt ('nhap tham so c cua phuong trinh a*X2 + bx + c=0');
+  let delta = b*b -4*a*c;
+  if (delta<0){
+    alert ('phuong trinh vo nghiem');
+  }else if (delta==0){
+    let x=-b/(2*a);
+    alert ('phuong trinh co nghiem kep la' +x);
+  } else {
+    let x1 = (-b+Math.sqrt(delta))/(a*2);
+    alert ('ngiem x1 la :' +x1);
+    let x2 = (-b-Math.sqrt(delta))/(a*2);
+    alert ('ngiem x2 la :' +x2);
+  }
+</script>
+</body>
+</html>
