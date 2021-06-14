@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game puzzle</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="jquery assignment 3 puzzle">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Adam Shechter">
+</head>
+<body>
+<div onclick = "doianh('a1')" style="background-color: black;width: 440px;height: 220px">
+    <img id = "a1"  src="phan4.jpg">
+</div><br>
+<div onclick = "doianh('a2')" style="background-color: black;width: 440px;height: 220px">
+    <img id = "a2"  src="phan1.jpg">
+</div><br>
+<div onclick = "doianh('a3')" style="background-color: black;width: 440px;height: 220px">
+    <img id = "a3"  src="phan5.jpg">
+</div>
+<script>
+    function doianh(val) {
+        let randomso = Math.round(Math.random() * 5) + 1;
+        switch (randomso) {
+            case 1:
+                document.getElementById(val).src = "phan1.jpg";
+                break;
+            case 2:
+                document.getElementById(val).src = "phan2.jpg";
+                break;
+            case 3:
+                document.getElementById(val).src = "phan3.jpg";
+                break;
+            case 4:
+                document.getElementById(val).src = "phan4.jpg";
+                break;
+            case 5:
+                document.getElementById(val).src = "phan5.jpg";
+                break;
+            case 6:
+                document.getElementById(val).src = "phan6.jpg";
+                break;
+        }
+        let anha1 = document.getElementById("a1").src;
+        let anha2 = document.getElementById("a2").src;
+        let anha3 = document.getElementById("a3").src;
+        if ((anha1 === "http://localhost:63342/btthbai9/phan1.jpg") &&
+            (anha2 === "http://localhost:63342/btthbai9/phan2.jpg") &&
+            (anha3 === "http://localhost:63342/btthbai9/phan3.jpg")) {
+            alert("Xin chuc mung ban!");
+        }
+        if ((anha1 === "http://localhost:63342/btthbai9/phan4.jpg") &&
+            (anha2 === "http://localhost:63342/btthbai9/phan5.jpg") &&
+            (anha3 === "http://localhost:63342/btthbai9/phan6.jpg")) {
+            alert("Xin chuc mung ban!");
+        }
+    }
+</script>
+</body>
+</html>
